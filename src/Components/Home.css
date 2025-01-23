@@ -1,0 +1,139 @@
+/* App.css */
+.home {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 0vh!important;
+  }
+  
+  header {
+    background-color: #f1f1f1;
+    padding: 5px;
+    text-align: center;
+    border-top: 1px solid #ddd;
+  }
+  h2{
+    text-align: center;
+  }
+  .filter-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding:0px;
+    border-bottom: 1px solid #ddd;
+    border-top: 1px solid #ddd;
+  }
+  .filter-result{
+    margin-top:17px;
+    font-size: 15px;
+  }
+  .filter-section select{
+    padding: 10px;
+    margin: 10px;
+    width:15%;
+    border:none;
+  }
+  
+  .property-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding:30px;
+  }
+  
+  .property-item {
+    /* border: 1px solid #ddd; */
+    border-radius: 5px;
+    padding: 10px;
+    width: 300px;
+    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
+    transition: transform 0.2s;
+    flex: 1 1 calc(30.333% - 10px);
+    box-sizing: border-box;
+    margin: 5px;
+  }
+  
+  .responsive-image {
+    width: 100%;
+    height: auto;
+  }
+  .property-item:hover {
+    transform: scale(1.05);
+  }
+  
+  .property-item img {
+    max-width: 100%;
+    border-radius: 5px;
+  }
+  
+  .property-item h2 {
+    font-size: 1.5em;
+    margin: 10px 0;
+  }
+
+  .property-item h5 {
+    font-size: 1em;
+    margin: 10px 0;
+    text-align: center;
+    letter-spacing: 1px;
+    color:#999;
+  }
+  
+  .property-item p {
+    margin: 5px 0;
+    text-align: center;
+  }
+  
+  .property-item {
+    position: relative;
+  }
+  
+  .property-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  .like-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+  }
+  
+  .property-item button:hover {
+    background-color: #ff4c4c;
+  }
+  
+  footer {
+    background-color: #f1f1f1;
+    padding: 5px;
+    text-align: center;
+    border-top: 1px solid #ddd;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .filter-section {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .property-list {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .property-item {
+      width: 100%;
+    }
+    .filter-section select{
+        width:70%;
+        border:none;
+    }
+   
+  }
+  

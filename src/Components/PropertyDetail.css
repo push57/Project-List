@@ -1,0 +1,284 @@
+/* Header Section */
+.header-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+
+.header-section img {
+    width: 80%;
+    height: auto;
+}
+
+.header-section .details {
+    width: 35%;
+    padding-left: 20px;
+    margin-top: 2%;
+}
+
+.header-section .details h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.header-section .details .price {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.header-section .details .info {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.header-section .details .contact-agent {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.header-section .details .facts-features {
+    margin-top: 20px;
+}
+
+.header-section .details .facts-features h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-align: left;
+    letter-spacing: 0.5px;
+}
+
+.header-section .details .facts-features p {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.share-property {
+    float: right;
+    color: black;
+    margin-top: -20px;
+}
+
+.image-collage {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    max-width: 800px;
+}
+
+.image-collage img {
+    width: 100%;
+    height: auto;
+    border: 1px solid #ccc;
+    cursor: zoom-in;
+}
+
+.top-image {
+    grid-column: span 2;
+}
+
+.facts-features p {
+    margin: 5px 0;
+    line-height: 30px;
+}
+
+.facts-features .label {
+    font-weight: bold;
+    display: inline-block;
+    width: 300px;
+}
+
+.facts-features .value {
+    display: inline-block;
+}
+
+.facts-features a {
+    color: #333;
+    text-decoration: none;
+}
+
+.facts-features a:hover {
+    text-decoration: underline;
+}
+
+.Desc-Details {
+    margin-top: 10px;
+}
+
+.contact-card {
+    display: flex;
+    align-items: center;
+    margin-top: 10%;
+}
+
+.contact-card img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.contact_details {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact_details .name {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.contact_details .title {
+    color: gray;
+    font-size: 0.9em;
+}
+
+.contact_details .phone {
+    margin-top: 5px;
+}
+
+.contact_details .email-button {
+    margin-top: 5px;
+    padding: 5px 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    text-decoration: none;
+    color: black;
+    font-size: 0.9em;
+}
+
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    z-index: 1000;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.75);
+    z-index: 999;
+}
+
+.modal-Close {
+    float: right;
+    margin-bottom: 5px;
+    border-radius: 10px;
+}
+
+.modal-image {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Header Section for Mobile */
+@media (max-width: 768px) {
+    .header-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 10px;
+    }
+
+    .header-section img {
+        width: 100%;
+        height: auto;
+    }
+
+    .header-section .details {
+        width: 100%;
+        padding-left: 0;
+        margin-top: 10%;
+    }
+
+    .header-section .details h1 {
+        font-size: 20px;
+        margin-bottom: 8px;
+    }
+
+    .header-section .details .price {
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 8px;
+    }
+
+    .header-section .details .info {
+        font-size: 14px;
+        margin-bottom: 8px;
+    }
+
+    .header-section .details .contact-agent {
+        background-color: black;
+        color: white;
+        padding: 8px;
+        text-align: center;
+        cursor: pointer;
+    }
+
+    .header-section .details .facts-features {
+        margin-top: 16px;
+    }
+
+    .header-section .details .facts-features h2 {
+        font-size: 16px;
+        margin-bottom: 8px;
+    }
+
+    .header-section .details .facts-features p {
+        font-size: 12px;
+        margin-bottom: 4px;
+    }
+
+    .share-property {
+        text-align: right;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .contact-card {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .contact-card img {
+        width: 80px;
+        height: 80px;
+        margin-bottom: 10px;
+    }
+
+    .contact_details {
+        align-items: flex-start;
+        text-align: center;
+    }
+
+    .contact_details .name {
+        font-size: 1.1em;
+    }
+
+    .contact_details .title {
+        font-size: 0.9em;
+    }
+
+    .contact_details .phone {
+        font-size: 0.8em;
+    }
+
+    .contact_details .email-button {
+        margin-left: 5px;
+    }
+
+    .image-collage img {
+        cursor: zoom-in;
+    }
+}
