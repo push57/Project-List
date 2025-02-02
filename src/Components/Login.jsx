@@ -5,8 +5,8 @@ import PropertyDetail from './PropertyDetail';
 import './Login.css';
 
 const Login = () => {
-  const [username, setUsername] = useState('');
-  const [password, setPassword] = useState('');
+  const [username, setUsername] = useState('push'); // Set default username
+  const [password, setPassword] = useState('usernamepush'); // Set default password
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const navigate = useNavigate();
 
@@ -28,7 +28,7 @@ const Login = () => {
     // Validate credentials
     if (username === sharedUsername && password === sharedPassword) {
       setIsLoggedIn(true);
-     sessionStorage.setItem('isLoggedIn', 'false');
+      sessionStorage.setItem('isLoggedIn', 'false');
       navigate('/home');
     } else {
       alert('Invalid credentials');
